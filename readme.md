@@ -65,6 +65,7 @@ gnome-extensions enable screenshot-annotator@moises
 
 > Próximamente disponible en [extensions.gnome.org](https://extensions.gnome.org)
 
+## Debes cerrar sesion y vovler a entrar luego de instalar!
 ---
 
 ## 🚀 Uso
