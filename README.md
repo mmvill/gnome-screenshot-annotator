@@ -41,7 +41,7 @@ Extensión para GNOME Shell 49 que agrega herramientas de anotación **directame
 
 ```bash
 # Descargar y descomprimir:
-unzip screenshot-annotator-v1.0.zip -d screenshot-annotator
+unzip gnome-screenshot-annotator-main.zip -d screenshot-annotator
 
 # Instalar:
 cd screenshot-annotator
@@ -66,6 +66,8 @@ gnome-extensions enable screenshot-annotator@moises
 > Próximamente disponible en [extensions.gnome.org](https://extensions.gnome.org)
 
 ---
+
+### Debes cerrar sesion para ver la extensión!
 
 ## 🚀 Uso
 
