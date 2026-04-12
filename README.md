@@ -48,7 +48,7 @@ cd screenshot-annotator
 bash install.sh
 ```
 
-### Opción 3 — extensions.gnome.org
+### Opción 2 — extensions.gnome.org
 
 > Próximamente disponible en [extensions.gnome.org](https://extensions.gnome.org)
 
