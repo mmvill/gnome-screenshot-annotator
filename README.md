@@ -92,29 +92,6 @@ Abre **GNOME Extensions → Screenshot Annotator → Configuración**:
 
 ---
 
-## 🗂️ Estructura del proyecto
-
-```
-screenshot-annotator@moises/
-├── extension.js          # Hook sobre ScreenshotUI.open() y _saveScreenshot()
-├── annotatorPanel.js     # UI de herramientas, canvas de dibujo, post-proceso
-├── prefs.js              # Panel de preferencias (Adw)
-├── stylesheet.css        # Estilos Adwaita integrados
-├── metadata.json         # Metadatos de la extensión
-├── install.sh            # Instalador
-├── schemas/
-│   └── org.gnome.shell.extensions.screenshot-annotator.gschema.xml
-└── icons/
-    ├── highlight-annotator-symbolic.svg
-    ├── rect-annotator-symbolic.svg
-    ├── circle-annotator-symbolic.svg
-    ├── arrow-annotator-symbolic.svg
-    ├── text-annotator-symbolic.svg
-    └── pixelate-annotator-symbolic.svg
-```
-
----
-
 ## 🔧 Cómo funciona
 
 La extensión parcha dos métodos del `ScreenshotUI` nativo de GNOME Shell:
