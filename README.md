@@ -48,19 +48,6 @@ cd screenshot-annotator
 bash install.sh
 ```
 
-### Opción 2 — Manual
-
-```bash
-EXT=~/.local/share/gnome-shell/extensions/screenshot-annotator@moises
-
-rm -rf "$EXT" && mkdir -p "$EXT/schemas" "$EXT/icons"
-cp *.js *.css *.json "$EXT/"
-cp schemas/*.xml "$EXT/schemas/" && glib-compile-schemas "$EXT/schemas/"
-cp icons/*.svg "$EXT/icons/"
-
-gnome-extensions enable screenshot-annotator@moises
-```
-
 ### Opción 3 — extensions.gnome.org
 
 > Próximamente disponible en [extensions.gnome.org](https://extensions.gnome.org)
