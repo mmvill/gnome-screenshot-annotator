@@ -1,0 +1,66 @@
+/*
+ * stylesheet.css — Screenshot Annotator v10
+ * Mismo lenguaje visual Adwaita oscuro que el panel nativo de GNOME Shell.
+ */
+
+.screenshot-ui-annotator-row {
+    spacing: 5px;
+    padding: 8px 16px;
+}
+
+/* Herramientas: reutilizan screenshot-ui-type-button para look nativo */
+.screenshot-ui-annotator-tool {
+    min-width:  34px;
+    min-height: 34px;
+    padding:    0;
+}
+
+/* Colores */
+.screenshot-ui-annotator-color {
+    width:         20px;
+    height:        20px;
+    border-radius: 10px;
+    border:        2px solid rgba(255,255,255,0.22);
+    padding:       0;
+    margin:        2px;
+}
+.screenshot-ui-annotator-color:hover  { border-color: rgba(255,255,255,0.70); }
+.screenshot-ui-annotator-color:checked { border-color: white; border-width: 3px; }
+
+/* Grosor */
+.screenshot-ui-annotator-width {
+    min-width:        44px;
+    height:           28px;
+    border-radius:    5px;
+    font-size:        11px;
+    font-weight:      bold;
+    color:            rgba(255,255,255,0.80);
+    background-color: rgba(255,255,255,0.07);
+    border:           1px solid rgba(255,255,255,0.12);
+    padding:          0 6px;
+}
+.screenshot-ui-annotator-width:hover  { background-color: rgba(255,255,255,0.14); }
+.screenshot-ui-annotator-width:checked {
+    background-color: rgba(53,132,228,0.90);
+    border-color:     rgba(53,132,228,1.00);
+    color: white;
+}
+
+/* Separador */
+.screenshot-ui-annotator-sep {
+    background-color: rgba(255,255,255,0.13);
+    margin: 0 5px;
+}
+
+/* Entrada de texto */
+.screenshot-ui-annotator-text-entry {
+    min-width:        180px;
+    height:           30px;
+    border-radius:    6px;
+    border:           2px solid rgba(53,132,228,0.90);
+    background-color: rgba(0,0,0,0.80);
+    color:            white;
+    font-size:        13px;
+    padding:          0 8px;
+    caret-color:      white;
+}

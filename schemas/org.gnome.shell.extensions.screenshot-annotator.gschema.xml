@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.screenshot-annotator"
+          path="/org/gnome/shell/extensions/screenshot-annotator/">
+    <key name="png-compression" type="i">
+      <default>6</default>
+      <range min="0" max="9"/>
+      <summary>Compresión PNG (0=rápido, 9=máxima)</summary>
+    </key>
+    <key name="pixelate-block-size" type="i">
+      <default>16</default>
+      <range min="4" max="64"/>
+      <summary>Tamaño de bloque del pixelado</summary>
+    </key>
+    <key name="default-stroke-width" type="i">
+      <default>4</default>
+      <range min="1" max="20"/>
+      <summary>Grosor por defecto</summary>
+    </key>
+  </schema>
+</schemalist>
