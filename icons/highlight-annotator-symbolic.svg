@@ -1,5 +1,15 @@
 <svg viewBox="0 0 24 24" fill="none">
-  <ellipse cx="12" cy="12" rx="7" ry="5"
-           stroke="currentColor"
-           stroke-width="1.8"/>
+  <path d="M5 15l9-9"
+        stroke="currentColor"
+        stroke-width="1.8"
+        stroke-linecap="round"/>
+  <path d="M14 6l4 4"
+        stroke="currentColor"
+        stroke-width="1.8"
+        stroke-linecap="round"/>
+  <path d="M5 15l-1 4 4-1"
+        stroke="currentColor"
+        stroke-width="1.8"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
 </svg>
