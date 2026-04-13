@@ -1,10 +1,3 @@
-<svg viewBox="0 0 24 24" fill="none">
-  <path d="M5 7h14"
-        stroke="currentColor"
-        stroke-width="2.4"
-        stroke-linecap="round"/>
-  <path d="M12 7v10"
-        stroke="currentColor"
-        stroke-width="2.4"
-        stroke-linecap="round"/>
+<svg width="200" height="200" viewBox="0 0 200 200">
+  <path d="M 15 15 H 185 V 50 H 130 V 150 H 185 V 185 H 15 V 150 H 70 V 50 H 15 Z" fill="none" stroke="#2c3e50" stroke-width="8" stroke-linecap="round"/>
 </svg>
