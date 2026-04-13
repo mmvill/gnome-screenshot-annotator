@@ -1,3 +1,5 @@
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-  <ellipse cx="12" cy="12" rx="8" ry="5"/>
+<svg viewBox="0 0 24 24" fill="none">
+  <ellipse cx="12" cy="12" rx="7" ry="5"
+           stroke="currentColor"
+           stroke-width="1.8"/>
 </svg>
