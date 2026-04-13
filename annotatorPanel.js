@@ -203,8 +203,8 @@ export class AnnotatorPanel {
     _makeIcon(name) {
         try {
             const f = Gio.File.new_for_path(`${this._extPath}/icons/${name}.svg`);
-            return new St.Icon({gicon: new Gio.FileIcon({file: f}), icon_size: 16});
-        } catch(_e) { return new St.Icon({icon_name: 'image-missing', icon_size: 16}); }
+            return new St.Icon({gicon: new Gio.FileIcon({file: f}), icon_size: 20});
+        } catch(_e) { return new St.Icon({icon_name: 'image-missing', icon_size: 20}); }
     }
 
     _sysBtn(icon, tip) {
