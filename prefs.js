@@ -20,14 +20,14 @@ export default class ScreenshotAnnotatorPrefs extends ExtensionPreferences {
 
         // ── Calidad de imagen ──────────────────────────────────────────────
         const grpQuality = new Adw.PreferencesGroup({
-            title: 'Calidad de imagen',
-            description: 'Ajustes del PNG generado al guardar',
+            title: 'Tamaño o compresión del archivo',
+            description: 'Opciones de compresión para las capturas de pantalla en formato PNG'
         });
         page.add(grpQuality);
 
         const rowPng = new Adw.SpinRow({
             title:   'Compresión PNG',
-            subtitle: '0 = sin comprimir (archivo más grande)  ·  9 = máxima compresión (archivo más pequeño)',
+            subtitle: 'No cambia la calidad de imagen. 0 = guarda rápido (archivo grande) · 9 = guarda más lento (archivo más pequeño)',
             adjustment: new Gtk.Adjustment({lower:0, upper:9, step_increment:1, value:s.get_int('png-compression')}),
         });
         s.bind('png-compression', rowPng, 'value', Gio.SettingsBindFlags.DEFAULT);
