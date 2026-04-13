@@ -64,3 +64,67 @@
     padding:          0 8px;
     caret-color:      white;
 }
+
+/* Botón + color personalizado */
+.screenshot-ui-annotator-color-custom {
+    color: rgba(255,255,255,0.85);
+}
+.screenshot-ui-annotator-color-custom:checked {
+    border-color: white;
+    border-width: 3px;
+}
+
+/* Popover del selector de color */
+.screenshot-ui-annotator-picker-popover {
+    background-color:    rgba(28, 28, 28, 0.97);
+    border:              1px solid rgba(255,255,255,0.15);
+    border-radius:       10px;
+    padding:             10px 12px;
+    spacing:             8px;
+    min-width:           210px;
+}
+
+.screenshot-ui-annotator-picker-row {
+    spacing: 6px;
+}
+
+.screenshot-ui-annotator-picker-label {
+    font-size:   14px;
+    font-weight: bold;
+    color:       rgba(255,255,255,0.7);
+}
+
+.screenshot-ui-annotator-picker-entry {
+    height:           30px;
+    border-radius:    6px;
+    border:           1px solid rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.08);
+    color:            white;
+    font-size:        14px;
+    font-family:      monospace;
+    padding:          0 8px;
+    caret-color:      white;
+}
+.screenshot-ui-annotator-picker-entry:focus {
+    border-color: rgba(53,132,228,0.9);
+}
+
+.screenshot-ui-annotator-picker-preview {
+    width:         26px;
+    height:        26px;
+    border-radius: 13px;
+    border:        2px solid rgba(255,255,255,0.3);
+}
+
+.screenshot-ui-annotator-picker-apply {
+    height:           30px;
+    border-radius:    6px;
+    background-color: rgba(53,132,228,0.9);
+    color:            white;
+    font-weight:      bold;
+    font-size:        13px;
+    border:           none;
+}
+.screenshot-ui-annotator-picker-apply:hover {
+    background-color: rgba(72,148,242,0.95);
+}
