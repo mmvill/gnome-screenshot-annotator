@@ -1,26 +1,11 @@
-<svg viewBox="0 0 24 24" fill="none">
-  <!-- cuerpo -->
-  <path d="M7 16L16 7"
-        stroke="currentColor"
-        stroke-width="1.8"
-        stroke-linecap="round"/>
-
-  <!-- grosor del cuerpo -->
-  <path d="M9 18L18 9"
-        stroke="currentColor"
-        stroke-width="1.8"
-        stroke-linecap="round"/>
-
-  <!-- punta -->
-  <path d="M6 17L8 19L10 17"
-        stroke="currentColor"
-        stroke-width="1.8"
-        stroke-linecap="round"
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <path d="M83.4,26.5 L73.5,16.6 C71.6,14.7 68.4,14.7 66.5,16.6 L61.6,21.5 L78.5,38.4 L83.4,33.5 C85.3,31.6 85.3,28.4 83.4,26.5 Z 
+           M58.7,24.4 L19.4,63.7 C18.8,64.3 18.4,65.1 18.2,66 L14.1,81.4 C13.8,82.5 14.1,83.7 14.9,84.5 C15.5,85.1 16.3,85.5 17.2,85.5 C17.5,85.5 17.9,85.4 18.2,85.3 L33.6,81.2 C34.4,81 35.2,80.6 35.8,80 L75.2,40.7 L58.7,24.4 Z 
+           M31.2,76 L20,79 L23,67.8 L53.5,37.3 L61.7,45.5 L31.2,76 Z 
+           M52,47 L44,39 L58,25 L66,33 L52,47 Z" 
+        fill="none" 
+        stroke="#333" 
+        stroke-width="4" 
+        stroke-linecap="round" 
         stroke-linejoin="round"/>
-
-  <!-- tapa -->
-  <path d="M15 6L18 9"
-        stroke="currentColor"
-        stroke-width="1.8"
-        stroke-linecap="round"/>
 </svg>
