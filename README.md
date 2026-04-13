@@ -10,7 +10,7 @@ Extensión para GNOME Shell 49 que agrega herramientas de anotación **directame
 
 | Herramienta | Descripción |
 |---|---|
-| ▬ **Marcador** | Resalta áreas con color semitransparente |
+| ![Screenshot Annotator en acción](highlight-annotator-symbolic.svg) | Resalta áreas con color semitransparente |
 | ▭ **Rectángulo** | Dibuja bordes rectangulares con grosor configurable |
 | ○ **Elipse** | Dibuja elipses y círculos |
 | ↗ **Flecha** | Dibuja flechas para señalar elementos |
