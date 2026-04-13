@@ -4,7 +4,7 @@
 
 set -e
 
-UUID="screenshot-annotator@moises"
+UUID="screenshot-annotator@mmvill.github.io"
 EXT="$HOME/.local/share/gnome-shell/extensions/$UUID"
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
