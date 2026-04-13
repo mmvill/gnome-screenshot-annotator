@@ -9,13 +9,13 @@ Extensión para GNOME Shell 49 que agrega herramientas de anotación **directame
 ## ✨ Características
 
 | Herramienta | Descripción |
-|---|---|
-| ![Screenshot Annotator en acción](highlight-annotator-symbolic.svg) | Resalta áreas con color semitransparente |
-| ▭ **Rectángulo** | Dibuja bordes rectangulares con grosor configurable |
-| ○ **Elipse** | Dibuja elipses y círculos |
-| ↗ **Flecha** | Dibuja flechas para señalar elementos |
-| A **Texto** | Inserta texto en cualquier posición |
-| ⊞ **Pixelado** | Censura regiones con efecto mosaico |
+| :---: | --- |
+| <img src="icons/highlight-annotator-symbolic.svg" width="20"> | **Resaltado**: Resalta áreas específicas. |
+| <img src="icons/rect-annotator-symbolic.svg" width="20"> | **Rectángulo**: Dibuja bordes rectangulares. |
+| <img src="icons/circle-annotator-symbolic.svg" width="20"> | **Elipse**: Dibuja elipses y círculos. |
+| <img src="icons/arrow-annotator-symbolic.svg" width="20"> | **Flecha**: Dibuja flechas para señalar. |
+| <img src="icons/text-annotator-symbolic.svg" width="20"> | **Texto**: Inserta texto en cualquier posición. |
+| <img src="icons/pixelate-annotator-symbolic.svg" width="20"> | **Pixelado**: Censura regiones con efecto mosaico. |
 
 - 🎨 **6 colores** predefinidos (amarillo, rojo, azul, verde, blanco, negro)
 - 📏 **3 grosores** de trazo (fino, medio, grueso)
