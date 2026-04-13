@@ -10,12 +10,12 @@ Extensión para GNOME Shell 49 que agrega herramientas de anotación **directame
 
 | Herramienta | Descripción |
 | :---: | --- |
-| <img src="icons/highlight-annotator-symbolic.svg" width="32" style="background-color:gray;"> | **Resaltado**: Resalta áreas específicas con un color semi-transparente. |
-| <img src="icons/rect-annotator-symbolic.svg" width="32" style="background-color:gray;"> | **Rectángulo**: Dibuja bordes rectangulares con grosor configurable. |
-| <img src="icons/circle-annotator-symbolic.svg" width="32" style="background-color:gray;"> | **Elipse**: Dibuja elipses y círculos perfectos. |
-| <img src="icons/arrow-annotator-symbolic.svg" width="32" style="background-color:gray;"> | **Flecha**: Dibuja flechas para señalar elementos importantes. |
-| <img src="icons/text-annotator-symbolic.svg" width="32" style="background-color:gray;"> | **Texto**: Inserta anotaciones de texto en cualquier posición. |
-| <img src="icons/pixelate-annotator-symbolic.svg" width="32" style="background-color:gray;"> | **Pixelado**: Censura regiones sensibles con un efecto mosaico. |
+| <div style="background-color:#6c757d; display:inline-block; padding:8px; border-radius:12px;"><img src="icons/highlight-annotator-symbolic.svg" width="32"></div> | **Resaltado**: Resalta áreas específicas con un color semi-transparente. |
+| <div style="background-color:#6c757d; display:inline-block; padding:8px; border-radius:12px;"><img src="icons/rect-annotator-symbolic.svg" width="32"></div> | **Rectángulo**: Dibuja bordes rectangulares con grosor configurable. |
+| <div style="background-color:#6c757d; display:inline-block; padding:8px; border-radius:12px;"><img src="icons/circle-annotator-symbolic.svg" width="32"></div> | **Elipse**: Dibuja elipses y círculos perfectos. |
+| <div style="background-color:#6c757d; display:inline-block; padding:8px; border-radius:12px;"><img src="icons/arrow-annotator-symbolic.svg" width="32"></div> | **Flecha**: Dibuja flechas para señalar elementos importantes. |
+| <div style="background-color:#6c757d; display:inline-block; padding:8px; border-radius:12px;"><img src="icons/text-annotator-symbolic.svg" width="32"></div> | **Texto**: Inserta anotaciones de texto en cualquier posición. |
+| <div style="background-color:#6c757d; display:inline-block; padding:8px; border-radius:12px;"><img src="icons/pixelate-annotator-symbolic.svg" width="32"></div> | **Pixelado**: Censura regiones sensibles con un efecto mosaico. |****
 
 - 🎨 **6 colores** predefinidos (amarillo, rojo, azul, verde, blanco, negro)
 - 📏 **3 grosores** de trazo (fino, medio, grueso)
