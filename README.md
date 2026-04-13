@@ -10,11 +10,11 @@ Extensión para GNOME Shell 49 que agrega herramientas de anotación **directame
 
 | Herramienta | Descripción |
 | :---: | --- |
-| <span style="background-color:#6c757d; display:inline-block; padding:8px;"><img src="icons/highlight-annotator-symbolic.svg" width="32"></span> | **Resaltado**: Resalta áreas específicas con un color semi-transparente. |
-| <span style="background-color:#6c757d; display:inline-block; padding:8px;"><img src="icons/rect-annotator-symbolic.svg" width="32"></span> | **Rectángulo**: Dibuja bordes rectangulares con grosor configurable. |
-| <span style="background-color:#6c757d; display:inline-block; padding:8px;"><img src="icons/circle-annotator-symbolic.svg" width="32"></span> | **Elipse**: Dibuja elipses y círculos perfectos. |
-| <span style="background-color:#6c757d; display:inline-block; padding:8px;"><img src="icons/arrow-annotator-symbolic.svg" width="32"></span> | **Flecha**: Dibuja flechas para señalar elementos importantes. |
-| <span style="background-color:#6c757d; display:inline-block; padding:8px;"><img src="icons/text-annotator-symbolic.svg" width="32"></span> | **Texto**: Inserta anotaciones de texto en cualquier posición. |
+| <img width="28" height="28" alt="image" src="https://github.com/user-attachments/assets/f49ada36-a2e5-4c67-a5e3-b64619102495" /> | **Resaltado**: Resalta áreas específicas con un color semi-transparente. |
+| <img width="28" height="28" alt="image" src="https://github.com/user-attachments/assets/fb40893e-1639-4524-a044-b7a0cd937990" /> | **Rectángulo**: Dibuja bordes rectangulares con grosor configurable. |
+| <img width="28" height="28" alt="image" src="https://github.com/user-attachments/assets/8fd041ab-da50-4acf-b667-9f225e72c626" /> | **Elipse**: Dibuja elipses y círculos perfectos. |
+| <img width="28" height="28" alt="image" src="https://github.com/user-attachments/assets/4b66e60d-3e7b-41d2-b9d3-d004d3eebc98" /> | **Flecha**: Dibuja flechas para señalar elementos importantes. |
+| <img width="28" height="28" alt="image" src="https://github.com/user-attachments/assets/9bd34080-e911-4c7c-b020-5877df51937a" /> | **Texto**: Inserta anotaciones de texto en cualquier posición. |
 | <span style="background-color:#6c757d; display:inline-block; padding:8px;"><img src="icons/pixelate-annotator-symbolic.svg" width="32"></span> | **Pixelado**: Censura regiones sensibles con un efecto mosaico. |
 
 - 🎨 **6 colores** predefinidos (amarillo, rojo, azul, verde, blanco, negro)
