@@ -1,14 +1,10 @@
-<svg viewBox="0 0 24 24" fill="none">
-  <path d="M4 12h11"
-        stroke="currentColor"
-        stroke-width="1.8"
-        stroke-linecap="round"/>
-  <path d="M11 7l5 5"
-        stroke="currentColor"
-        stroke-width="1.8"
-        stroke-linecap="round"/>
-  <path d="M11 17l5-5"
-        stroke="currentColor"
-        stroke-width="1.8"
-        stroke-linecap="round"/>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <path 
+    d="M 40 160 L 160 40 M 80 40 H 160 V 120" 
+    fill="none" 
+    stroke="#eeeeec" 
+    stroke-width="8" 
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+  />
 </svg>
