@@ -41,6 +41,7 @@ export class AnnotatorPanel {
         this._row = null; this._drawArea = null; this._textEntry = null;
         this._tooltips = []; this._colorBtns = []; this._widthBtns = [];
         this._toolBtns = {}; this._modeSignals = [];
+        this._colorPickerPopover = null; this._customColorBtn = null;
     }
 
     inject() {
@@ -66,6 +67,7 @@ export class AnnotatorPanel {
             try { obj.disconnect(id); } catch(_e){}
         }
         this._modeSignals = [];
+        this._closeColorPicker();
         if (this._textEntry) { this._textEntry.destroy(); this._textEntry = null; }
         this._deactivateTool();
         for (const t of this._tooltips) {
@@ -160,11 +162,22 @@ export class AnnotatorPanel {
                 this._color = c;
                 this._colorBtns.forEach(b => b.remove_style_pseudo_class('checked'));
                 btn.add_style_pseudo_class('checked');
+                this._closeColorPicker();
                 this._ui.grab_key_focus();
             });
             this._row.add_child(btn); this._colorBtns.push(btn);
         }
         if (this._colorBtns[0]) this._colorBtns[0].add_style_pseudo_class('checked');
+
+        // Botón selector de color personalizado
+        this._customColorBtn = new St.Button({
+            style_class: 'screenshot-ui-annotator-color screenshot-ui-annotator-color-custom',
+            can_focus: false,
+            child: new St.Icon({icon_name: 'list-add-symbolic', icon_size: 12}),
+        });
+        this._addTip(this._customColorBtn, 'Color personalizado');
+        this._customColorBtn.connect('clicked', () => this._toggleColorPicker());
+        this._row.add_child(this._customColorBtn);
 
         this._row.add_child(this._sep());
 
@@ -221,7 +234,128 @@ export class AnnotatorPanel {
             this._ui.add_child(tip); this._tooltips.push(tip);
         } catch(_e) {}
     }
+// ── Selector de color personalizado ───────────────────────────────────
 
+    _toggleColorPicker() {
+        if (this._colorPickerPopover) {
+            this._closeColorPicker();
+            return;
+        }
+
+        // Posición: encima del botón custom en el panel
+        const [bx, by] = this._customColorBtn.get_transformed_position();
+        const popoverW = 220, popoverH = 96;
+
+        this._colorPickerPopover = new St.BoxLayout({
+            style_class: 'screenshot-ui-annotator-picker-popover',
+            vertical: true,
+            reactive: true,
+        });
+
+        // Fila: label + input hex + preview
+        const row = new St.BoxLayout({
+            style_class: 'screenshot-ui-annotator-picker-row',
+            vertical: false,
+        });
+
+        const label = new St.Label({
+            text: '#',
+            style_class: 'screenshot-ui-annotator-picker-label',
+            y_align: Clutter.ActorAlign.CENTER,
+        });
+        row.add_child(label);
+
+        this._hexEntry = new St.Entry({
+            style_class: 'screenshot-ui-annotator-picker-entry',
+            hint_text: 'rrggbb',
+            can_focus: true,
+            x_expand: true,
+        });
+        // Mostrar color actual como valor inicial (sin el #)
+        const curCss = this._color.css?.replace('#', '') ?? 'ff3333';
+        this._hexEntry.set_text(curCss);
+        row.add_child(this._hexEntry);
+
+        this._hexPreview = new St.Widget({
+            style_class: 'screenshot-ui-annotator-picker-preview',
+            style: `background-color:${this._color.css ?? '#ff3333'};`,
+        });
+        row.add_child(this._hexPreview);
+
+        this._colorPickerPopover.add_child(row);
+
+        // Actualizar preview al escribir
+        this._hexEntry.get_clutter_text().connect('text-changed', () => {
+            const hex = this._hexEntry.get_text().replace(/[^0-9a-fA-F]/g, '').slice(0, 6);
+            if (hex.length === 6)
+                this._hexPreview.set_style(`background-color:#${hex};`);
+        });
+
+        // Botón Aplicar
+        const applyBtn = new St.Button({
+            style_class: 'screenshot-ui-annotator-picker-apply',
+            label: 'Aplicar',
+            can_focus: false,
+            x_expand: true,
+        });
+        applyBtn.connect('clicked', () => {
+            const hex = this._hexEntry.get_text().replace(/[^0-9a-fA-F]/g, '').slice(0, 6);
+            if (hex.length === 6) this._applyCustomColor(`#${hex}`);
+        });
+        this._colorPickerPopover.add_child(applyBtn);
+
+        // Enter en el input = aplicar
+        this._hexEntry.connect('key-press-event', (_e, ev) => {
+            if (ev.get_key_symbol() === Clutter.KEY_Return ||
+                ev.get_key_symbol() === Clutter.KEY_KP_Enter) {
+                const hex = this._hexEntry.get_text().replace(/[^0-9a-fA-F]/g, '').slice(0, 6);
+                if (hex.length === 6) this._applyCustomColor(`#${hex}`);
+                return Clutter.EVENT_STOP;
+            }
+            if (ev.get_key_symbol() === Clutter.KEY_Escape) {
+                this._closeColorPicker();
+                return Clutter.EVENT_STOP;
+            }
+            return Clutter.EVENT_PROPAGATE;
+        });
+
+        // Posicionar encima del botón
+        this._colorPickerPopover.set_position(
+            Math.max(4, Math.round(bx - popoverW / 2 + 10)),
+            Math.round(by - popoverH - 8)
+        );
+
+        this._ui.add_child(this._colorPickerPopover);
+        this._hexEntry.grab_key_focus();
+        this._customColorBtn.add_style_pseudo_class('checked');
+    }
+
+    _closeColorPicker() {
+        if (this._colorPickerPopover) {
+            try { this._ui.remove_child(this._colorPickerPopover); } catch(_e){}
+            this._colorPickerPopover.destroy();
+            this._colorPickerPopover = null;
+            this._hexEntry = null;
+            this._hexPreview = null;
+        }
+        this._customColorBtn?.remove_style_pseudo_class('checked');
+    }
+
+    /** Parsea un hex #RRGGBB → objeto color y lo aplica */
+    _applyCustomColor(hex) {
+        const r = parseInt(hex.slice(1, 3), 16) / 255;
+        const g = parseInt(hex.slice(3, 5), 16) / 255;
+        const b = parseInt(hex.slice(5, 7), 16) / 255;
+        if (isNaN(r) || isNaN(g) || isNaN(b)) return;
+
+        this._color = {r, g, b, a: 0.9, css: hex, label: 'Personalizado'};
+
+        // Marcar visualmente el botón custom con el color elegido
+        this._customColorBtn.set_style(`background-color:${hex};`);
+        this._colorBtns.forEach(b => b.remove_style_pseudo_class('checked'));
+        this._closeColorPicker();
+        this._ui.grab_key_focus();
+    }
     _sep() { return new St.Widget({style_class:'screenshot-ui-annotator-sep', width:1, height:24}); }
 
     // ── DrawArea ───────────────────────────────────────────────────────────
