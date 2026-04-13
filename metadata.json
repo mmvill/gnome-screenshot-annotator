@@ -1,5 +1,5 @@
 {
-    "uuid": "screenshot-annotator@moises",
+    "uuid": "screenshot-annotator@mmvill.github.io",
     "name": "Screenshot Annotator",
     "description": "Herramientas de anotación integradas en el panel de captura de GNOME: marcador, rectángulo, elipse, flecha, texto y pixelado. Las anotaciones se aplican a la imagen guardada.",
     "version": 1,
