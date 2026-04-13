@@ -2,7 +2,7 @@
   <path 
     d="M 15 15 H 185 V 185 H 15 Z" 
     fill="none" 
-    stroke="#ffffff" 
+    stroke="#eeeeec"
     stroke-width="8" 
     stroke-linecap="round" 
     stroke-linejoin="round"
