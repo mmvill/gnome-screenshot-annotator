@@ -2,7 +2,7 @@
 
 Extensión para GNOME Shell 49 que agrega herramientas de anotación **directamente dentro del panel de captura de pantalla nativo** de GNOME. Sin ventanas separadas, sin apps externas — las herramientas aparecen integradas en la misma UI que se abre al presionar `PrintScreen`.
 
-![Screenshot Annotator en acción](screenshot.png)
+<img width="822" height="231" alt="image" src="https://github.com/user-attachments/assets/bf628326-2c4f-4f31-bfb5-8fc95d8059aa" />
 
 ---
 
@@ -40,9 +40,6 @@ Extensión para GNOME Shell 49 que agrega herramientas de anotación **directame
 ### Opción 1 — Script automático
 
 ```bash
-# Descargar y descomprimir:
-unzip gnome-screenshot-annotator-main.zip -d screenshot-annotator
-
 # Instalar:
 cd screenshot-annotator
 bash install.sh
