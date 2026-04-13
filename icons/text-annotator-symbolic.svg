@@ -1,11 +1,10 @@
-<svg viewBox="0 0 24 24">
-  <rect x="5" y="5" width="3" height="3" fill="currentColor"/>
-  <rect x="10.5" y="5" width="3" height="3" fill="currentColor"/>
-  <rect x="16" y="5" width="3" height="3" fill="currentColor"/>
-  <rect x="5" y="10.5" width="3" height="3" fill="currentColor"/>
-  <rect x="10.5" y="10.5" width="3" height="3" fill="currentColor"/>
-  <rect x="16" y="10.5" width="3" height="3" fill="currentColor"/>
-  <rect x="5" y="16" width="3" height="3" fill="currentColor"/>
-  <rect x="10.5" y="16" width="3" height="3" fill="currentColor"/>
-  <rect x="16" y="16" width="3" height="3" fill="currentColor"/>
+<svg viewBox="0 0 24 24" fill="none">
+  <path d="M5 6h14"
+        stroke="currentColor"
+        stroke-width="1.8"
+        stroke-linecap="round"/>
+  <path d="M12 6v12"
+        stroke="currentColor"
+        stroke-width="1.8"
+        stroke-linecap="round"/>
 </svg>
