@@ -10,12 +10,12 @@ Extensión para GNOME Shell 49 que agrega herramientas de anotación **directame
 
 | Herramienta | Descripción |
 | :---: | --- |
-| <img src="icons/highlight-annotator-symbolic.svg" width="20"> | **Resaltado**: Resalta áreas específicas. |
-| <img src="icons/rect-annotator-symbolic.svg" width="20"> | **Rectángulo**: Dibuja bordes rectangulares. |
-| <img src="icons/circle-annotator-symbolic.svg" width="20"> | **Elipse**: Dibuja elipses y círculos. |
-| <img src="icons/arrow-annotator-symbolic.svg" width="20"> | **Flecha**: Dibuja flechas para señalar. |
-| <img src="icons/text-annotator-symbolic.svg" width="20"> | **Texto**: Inserta texto en cualquier posición. |
-| <img src="icons/pixelate-annotator-symbolic.svg" width="20"> | **Pixelado**: Censura regiones con efecto mosaico. |
+| <div style="background:#eee; padding:5px; border-radius:4px; display:inline-block;"><img src="icons/highlight-annotator-symbolic.svg" width="24"></div> | **Resaltado**: Resalta áreas específicas con un color semi-transparente. |
+| <div style="background:#eee; padding:5px; border-radius:4px; display:inline-block;"><img src="icons/rect-annotator-symbolic.svg" width="24"></div> | **Rectángulo**: Dibuja bordes rectangulares con grosor configurable. |
+| <div style="background:#eee; padding:5px; border-radius:4px; display:inline-block;"><img src="icons/circle-annotator-symbolic.svg" width="24"></div> | **Elipse**: Dibuja elipses y círculos perfectos. |
+| <div style="background:#eee; padding:5px; border-radius:4px; display:inline-block;"><img src="icons/arrow-annotator-symbolic.svg" width="24"></div> | **Flecha**: Dibuja flechas para señalar elementos importantes. |
+| <div style="background:#eee; padding:5px; border-radius:4px; display:inline-block;"><img src="icons/text-annotator-symbolic.svg" width="24"></div> | **Texto**: Inserta anotaciones de texto en cualquier posición. |
+| <div style="background:#eee; padding:5px; border-radius:4px; display:inline-block;"><img src="icons/pixelate-annotator-symbolic.svg" width="24"></div> | **Pixelado**: Censura regiones sensibles con un efecto mosaico. |
 
 - 🎨 **6 colores** predefinidos (amarillo, rojo, azul, verde, blanco, negro)
 - 📏 **3 grosores** de trazo (fino, medio, grueso)
