@@ -10,12 +10,12 @@ Extensión para GNOME Shell 49 que agrega herramientas de anotación **directame
 
 | Herramienta | Descripción |
 | :---: | --- |
-| <div style="background-color:#6c757d; display:inline-block; padding:8px; border-radius:12px;"><img src="icons/highlight-annotator-symbolic.svg" width="32"></div> | **Resaltado**: Resalta áreas específicas con un color semi-transparente. |
-| <div style="background-color:#6c757d; display:inline-block; padding:8px; border-radius:12px;"><img src="icons/rect-annotator-symbolic.svg" width="32"></div> | **Rectángulo**: Dibuja bordes rectangulares con grosor configurable. |
-| <div style="background-color:#6c757d; display:inline-block; padding:8px; border-radius:12px;"><img src="icons/circle-annotator-symbolic.svg" width="32"></div> | **Elipse**: Dibuja elipses y círculos perfectos. |
-| <div style="background-color:#6c757d; display:inline-block; padding:8px; border-radius:12px;"><img src="icons/arrow-annotator-symbolic.svg" width="32"></div> | **Flecha**: Dibuja flechas para señalar elementos importantes. |
-| <div style="background-color:#6c757d; display:inline-block; padding:8px; border-radius:12px;"><img src="icons/text-annotator-symbolic.svg" width="32"></div> | **Texto**: Inserta anotaciones de texto en cualquier posición. |
-| <div style="background-color:#6c757d; display:inline-block; padding:8px; border-radius:12px;"><img src="icons/pixelate-annotator-symbolic.svg" width="32"></div> | **Pixelado**: Censura regiones sensibles con un efecto mosaico. |****
+| <span style="background-color:#6c757d; display:inline-block; padding:8px;"><img src="icons/highlight-annotator-symbolic.svg" width="32"></span> | **Resaltado**: Resalta áreas específicas con un color semi-transparente. |
+| <span style="background-color:#6c757d; display:inline-block; padding:8px;"><img src="icons/rect-annotator-symbolic.svg" width="32"></span> | **Rectángulo**: Dibuja bordes rectangulares con grosor configurable. |
+| <span style="background-color:#6c757d; display:inline-block; padding:8px;"><img src="icons/circle-annotator-symbolic.svg" width="32"></span> | **Elipse**: Dibuja elipses y círculos perfectos. |
+| <span style="background-color:#6c757d; display:inline-block; padding:8px;"><img src="icons/arrow-annotator-symbolic.svg" width="32"></span> | **Flecha**: Dibuja flechas para señalar elementos importantes. |
+| <span style="background-color:#6c757d; display:inline-block; padding:8px;"><img src="icons/text-annotator-symbolic.svg" width="32"></span> | **Texto**: Inserta anotaciones de texto en cualquier posición. |
+| <span style="background-color:#6c757d; display:inline-block; padding:8px;"><img src="icons/pixelate-annotator-symbolic.svg" width="32"></span> | **Pixelado**: Censura regiones sensibles con un efecto mosaico. |
 
 - 🎨 **6 colores** predefinidos (amarillo, rojo, azul, verde, blanco, negro)
 - 📏 **3 grosores** de trazo (fino, medio, grueso)
