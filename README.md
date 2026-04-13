@@ -10,12 +10,12 @@ Extensión para GNOME Shell 49 que agrega herramientas de anotación **directame
 
 | Herramienta | Descripción |
 | :---: | --- |
-| ![](icons/highlight-annotator-symbolic.svg#gh-light-mode-only)![](icons/highlight-annotator-symbolic.svg#gh-dark-mode-only) | **Resaltado**: Resalta áreas específicas. |
-| ![](icons/rect-annotator-symbolic.svg#gh-light-mode-only)![](icons/rect-annotator-symbolic.svg#gh-dark-mode-only) | **Rectángulo**: Dibuja bordes rectangulares. |
-| ![](icons/circle-annotator-symbolic.svg#gh-light-mode-only)![](icons/circle-annotator-symbolic.svg#gh-dark-mode-only) | **Elipse**: Dibuja elipses y círculos perfectos. |
-| ![](icons/arrow-annotator-symbolic.svg#gh-light-mode-only)![](icons/arrow-annotator-symbolic.svg#gh-dark-mode-only) | **Flecha**: Dibuja flechas para señalar elementos. |
-| ![](icons/text-annotator-symbolic.svg#gh-light-mode-only)![](icons/text-annotator-symbolic.svg#gh-dark-mode-only) | **Texto**: Inserta anotaciones de texto. |
-| ![](icons/pixelate-annotator-symbolic.svg#gh-light-mode-only)![](icons/pixelate-annotator-symbolic.svg#gh-dark-mode-only) | **Pixelado**: Censura regiones sensibles. |
+| <img src="icons/highlight-annotator-symbolic.svg" width="32" style="background-color:gray;"> | **Resaltado**: Resalta áreas específicas con un color semi-transparente. |
+| <img src="icons/rect-annotator-symbolic.svg" width="32" style="background-color:gray;"> | **Rectángulo**: Dibuja bordes rectangulares con grosor configurable. |
+| <img src="icons/circle-annotator-symbolic.svg" width="32" style="background-color:gray;"> | **Elipse**: Dibuja elipses y círculos perfectos. |
+| <img src="icons/arrow-annotator-symbolic.svg" width="32" style="background-color:gray;"> | **Flecha**: Dibuja flechas para señalar elementos importantes. |
+| <img src="icons/text-annotator-symbolic.svg" width="32" style="background-color:gray;"> | **Texto**: Inserta anotaciones de texto en cualquier posición. |
+| <img src="icons/pixelate-annotator-symbolic.svg" width="32" style="background-color:gray;"> | **Pixelado**: Censura regiones sensibles con un efecto mosaico. |
 
 - 🎨 **6 colores** predefinidos (amarillo, rojo, azul, verde, blanco, negro)
 - 📏 **3 grosores** de trazo (fino, medio, grueso)
