@@ -2,7 +2,7 @@
   <path 
     d="M20 20h160v40h-60v120H80V60H20V20z" 
     fill="none" 
-    stroke="currentColor" 
+    stroke="#eeeeec" 
     stroke-width="8" 
     stroke-linecap="round" 
     stroke-linejoin="round"
