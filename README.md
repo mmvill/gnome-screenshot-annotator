@@ -2,7 +2,17 @@
 
 Extensión para GNOME Shell 49 que agrega herramientas de anotación **directamente dentro del panel de captura de pantalla nativo** de GNOME. Sin ventanas separadas, sin apps externas — las herramientas aparecen integradas en la misma UI que se abre al presionar `PrintScreen`.
 
-<img width="852" height="235" alt="image" src="https://github.com/user-attachments/assets/190409fa-6304-4398-b073-e864d2ed996c" />
+## ✨ Novedades en v2.0
+<img width="1309" height="258" alt="Captura desde 2026-04-23 00-29-48" src="https://github.com/user-attachments/assets/3ddf4f88-05ff-4e78-9241-88861cd6fb17" />
+
+### Nuevas herramientas de anotación
+- **Línea recta** — arrastra para dibujar una línea perfectamente recta entre dos puntos
+- **Trazo libre** — dibuja a mano alzada con total libertad sobre la captura
+- **Contador numerado** — haz clic para colocar círculos numerados automáticamente (1, 2, 3...), ideal para documentar pasos o señalar elementos en orden
+
+### Panel minimizable
+- **Barra flotante** — el panel de captura completo se puede colapsar en una barra compacta y arrastrable que puedes mover a cualquier parte de la pantalla, dejando la imagen completamente visible mientras anotas
+<img width="1015" height="173" alt="Captura desde 2026-04-23 00-30-45" src="https://github.com/user-attachments/assets/a66928be-a080-46e3-ad87-7e67bf189e8d" />
 
 ---
 
