@@ -3,6 +3,6 @@
     "name": "Screenshot Annotator",
     "description": "Herramientas de anotación integradas en el panel de captura de GNOME: marcador, rectángulo, elipse, flecha, texto y pixelado. Las anotaciones se aplican a la imagen guardada.",
     "version": 1,
-    "shell-version": ["49"],
+    "shell-version": ["49","50"],
     "url": "https://github.com/mmvill/gnome-screenshot-annotator"
 }
